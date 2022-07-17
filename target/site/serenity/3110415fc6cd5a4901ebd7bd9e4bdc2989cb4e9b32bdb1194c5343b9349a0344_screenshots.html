@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Automatizacion portal zapatoca mi aguila</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="8538b26c23dcfe12eddb2bd6dac6e85477eef528e4099f79af24b75435ea524f.html">Login Zapatoca - Mi Aguila</a></span>
+                > <span class="truncate-60"><a
+                    href="3110415fc6cd5a4901ebd7bd9e4bdc2989cb4e9b32bdb1194c5343b9349a0344.html">Seleccionar boton ingresar sin credenciales de usuario y clave </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-07-2022 17:42</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Login Zapatoca - Mi Aguila </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como usuario deseo loguearme en la aplicaci�n mi aguila
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="795f9e1151bbb86adcbb3ebdb67b2fe33ff15e3132c28299cd7dcfb8e96d4125.html">Login Sin Credenciales
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Seleccionar boton ingresar sin credenciales de usuario y clave
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="d561186913dcc7c855c83518504272a4a6313a0d79ef5cf3b6bad9dcde54ec10.png" title=" Given como &quot;comprador&quot; en la plataforma" width="800"/>
+                <img src="d561186913dcc7c855c83518504272a4a6313a0d79ef5cf3b6bad9dcde54ec10.png" title=" comprador opens the Home zapatoca" width="800"/>
+                <img src="d561186913dcc7c855c83518504272a4a6313a0d79ef5cf3b6bad9dcde54ec10.png" title=" Given como &quot;comprador&quot; en la plataforma (completed)" width="800"/>
+                <img src="d561186913dcc7c855c83518504272a4a6313a0d79ef5cf3b6bad9dcde54ec10.png" title=" When no se ingresan datos de usuario" width="800"/>
+                <img src="d561186913dcc7c855c83518504272a4a6313a0d79ef5cf3b6bad9dcde54ec10.png" title=" Comprador seleccionar campo" width="800"/>
+                <img src="d561186913dcc7c855c83518504272a4a6313a0d79ef5cf3b6bad9dcde54ec10.png" title=" comprador clicks on [[ChromeDriver: chrome on WINDOWS (0db2d986cffc934b09984b0f185a0be9)] -&gt; xpath: //*[contains(text(),'Ingresar')]]" width="800"/>
+                <img src="5fab78727b6c2025f4f6c0160cec4389be061b493bd0c9eecdf686479470236a.png" title=" comprador clicks on Ingreso correo electrinico" width="800"/>
+                <img src="38b7f577e57d866cfecd0ad60b8410113dd50d2b55f1e53542a9e765ef981773.png" title=" comprador clicks on Ingreso correo electrinico (completed)" width="800"/>
+                <img src="fa2ead6c3b659ae20b3e026432f92327bf7dba65829d0083d3f9022f29ee211c.png" title=" comprador clicks on Boton ingresar" width="800"/>
+                <img src="fa2ead6c3b659ae20b3e026432f92327bf7dba65829d0083d3f9022f29ee211c.png" title=" Comprador seleccionar campo (completed)" width="800"/>
+                <img src="fa2ead6c3b659ae20b3e026432f92327bf7dba65829d0083d3f9022f29ee211c.png" title=" When no se ingresan datos de usuario (completed)" width="800"/>
+                <img src="e09351cdebc208a6fd2cad9b965de7a2a6c32833f39e4e538d882094bf850e0b.png" title=" Then se muestra mensaje campos requeridos" width="800"/>
+                <img src="e09351cdebc208a6fd2cad9b965de7a2a6c32833f39e4e538d882094bf850e0b.png" title=" Then login invalido should be (a collection containing '- Campo Requerido' and a collection containing '- Debes ingresar un email v&amp;aacute;lido')" width="800"/>
+                <img src="fa2ead6c3b659ae20b3e026432f92327bf7dba65829d0083d3f9022f29ee211c.png" title=" Then login invalido should be (a collection containing '- Campo Requerido' and a collection containing '- Debes ingresar un email v&amp;aacute;lido') (completed)" width="800"/>
+                <img src="fa2ead6c3b659ae20b3e026432f92327bf7dba65829d0083d3f9022f29ee211c.png" title=" Then se muestra mensaje campos requeridos (completed): <span class='success-color'>SUCCESS</span>" width="800"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.5</span>
+</div>
+</body>
+</html>

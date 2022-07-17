@@ -1,0 +1,62 @@
+repositories {
+    maven {
+        url "https://plugins.gradle.org/m2"
+    }
+}
+
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2"
+        }
+
+    }
+    ext {
+        serenityCoreVersion = '3.2.5'
+        serenityCucumberVersion = '3.2.5'
+        serenityEnsureVersion = '3.2.4'
+        junitVersion = '4.13.2'
+        assertJVersion = '3.20.2'
+        slf4jVersion = '2.0.0-alpha4'
+        apachePoiVersion= '5.0.0'
+        mavenSurefireVersion= '2.22.2'
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:${serenityCoreVersion}")
+        classpath("net.serenity-bdd:serenity-single-page-report:${serenityCoreVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
+
+
+dependencies {
+    implementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-cucumber:${serenityCucumberVersion}"
+    implementation "net.serenity-bdd:serenity-junit:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}"
+    testImplementation "junit:junit:${junitVersion}"
+    testImplementation "org.assertj:assertj-core:${assertJVersion}"
+    testImplementation "org.slf4j:slf4j-simple:${slf4jVersion}"
+
+
+}
+
+serenity {
+    reports = ["single-page-html"]
+}
+wrapper {
+    gradleVersion = "7.4.2"
+}
+test {
+    systemProperty 'tags', System.getProperty('tags', '')
+    systemProperty 'environment', System.getProperty('environment', '')
+}
+gradle.startParameter.continueOnFailure = true
+test.finalizedBy(aggregate)

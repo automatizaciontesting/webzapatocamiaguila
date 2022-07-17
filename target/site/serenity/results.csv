@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login Zapatoca - Mi Aguila","Ingreso exitoso al portal zapatoca mi aguila","PENDING","2022-07-16T17:25:23.0833968-05:00[America/Bogota]","0.0","0.22"
+"Login Zapatoca - Mi Aguila","Seleccionar boton ingresar sin credenciales de usuario y clave","SUCCESS","2022-07-16T17:42:45.7787888-05:00[America/Bogota]","0.0","51.56"
+"Realizar compra de productos","Realizar compra de productos","SUCCESS","2022-07-17T00:07:29.4941601-05:00[America/Bogota]","0.0","200.61"
+"Realizar registro en la plataforma","Registro exitoso en la plantaforma zapatoca-miaguila","SUCCESS","2022-07-17T13:36:33.3239407-05:00[America/Bogota]","0.0","89.58"
