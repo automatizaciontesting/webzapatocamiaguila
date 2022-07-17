@@ -60,12 +60,13 @@ El patrón de diseño screenplay ha sido mayormente difundido por serenity BDD, 
 
 ## Descarga del proyecto
 
-- Acceder a la url del proyecto https://github.com/automatizaciontesting/webzapatocamiaguila
+- Acceder a la url del proyecto https://gitlab.com/ias-training/automatizacion-demo-screenplay
   ![releases_gradle](imagesReadme/clone_gitlab.png)
 - Seleccionar la opción "Clone" usar en la lista "Clone with https"
-- Copiar el link del vinculo :  https://github.com/automatizaciontesting/webzapatocamiaguila.git
+- Copiar el link del vinculo :  https://gitlab.com/ias-training/automatizacion-demo-screenplay.git
   - Usar una herramienta para conectar y descargar el proyecto, ejemplo Gitbash, https://git-scm.com/downloads.
     ![clone_gitbash](imagesReadme/clone_gitlab.png)
+    ![clone_gitbash](imagesReadme/gitbash_open.png)
     ![clone_gitbash](imagesReadme/gitbash_open_branch.png)
 
 ## Reporte de serenity
@@ -93,13 +94,14 @@ El patrón de diseño screenplay ha sido mayormente difundido por serenity BDD, 
 Git global setup
 ```sh
 git config --global user.name "Hervin Camargo Carlier"
-git config --global user.email "hervincamargo@gmail.com"
+git config --global user.email "hervin.camargo@ias.com.co"
 ```
 
 Comando Push en proyecto existente
 ```sh
+cd ias
 git init
-git remote add origin https://github.com/automatizaciontesting/webzapatocamiaguila.git
+git remote add origin https://gitlab.com/ias-training/automatizacion-demo-screenplay.git
 git add .
 git commit -m "Initial commit"
 git push -u origin main
