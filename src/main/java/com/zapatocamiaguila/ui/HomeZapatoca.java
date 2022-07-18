@@ -10,5 +10,5 @@ public class HomeZapatoca extends PageObject {
     public static final Target LBL_USUARIO_LOGUEADO = Target.the("Logueado").located(By.xpath("//*[@class='text-sm font-semi-bold leading-tight']"));
     public static final Target GRILLA_PRODUCTO = Target.the("Logueado").located(By.xpath("//*[name()='svg']/following::span[contains(text(),'Categorías')]"));
     public static final Target LBL_USUARIO = Target.the("Usuario creado").located(By.xpath("//*[@class='text-sm font-semi-bold leading-tight hidden lg:flex' and contains(text(),'Hola')]"));
-
+    public static final Target LBL_TOTAL_PRODUCTOS = Target.the("Total productos agregados al carrito").located(By.xpath("//*[@class='font-bold text-2xs']"));
 }

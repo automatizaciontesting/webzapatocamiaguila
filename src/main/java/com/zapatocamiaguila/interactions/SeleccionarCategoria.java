@@ -5,19 +5,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
-import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.JavaScriptClick;
-import net.serenitybdd.screenplay.targets.Target;
-import net.serenitybdd.screenplay.waits.Wait;
-import net.serenitybdd.screenplay.waits.WaitUntil;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import java.util.List;
-
-import static com.zapatocamiaguila.ui.HomeZapatoca.BTN_INGRESAR;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isCurrentlyEnabled;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class SeleccionarCategoria implements Interaction {
 

@@ -18,10 +18,14 @@
   <img src="https://gradle.org/images/gradle-knowledge-graph-logo.png?20170228" title="Gradle" > 
   </a> 
 </p>
-Prueba tecnica de implementación de funcionalidad web
+La siguiente prueba tecnica define los siguiente casos funcionales 
+- Login de usuario exitoso de usuario registrado previamente
+- Login sin credenciales o vacias
+- Creación de usuario exitoso
+- Agregar productos productos (minimo 5) al carrito de compra
 
 ## Proyecto construido con patrón de diseño para automatización screenplay
-El patrón de diseño screenplay ha sido mayormente difundido por serenity BDD, aunque el patrón en sí es en gran medida independiente del lenguaje y del marco
+El patrón de diseño para esta pruebas es screenplay, usando el framework de Serenity BDD + Cucumber
 ### Pilares POO en screenplay
 - Encapsulamiento
 - Herencia
@@ -36,13 +40,13 @@ El patrón de diseño screenplay ha sido mayormente difundido por serenity BDD, 
 - D -  Principio Inversión de dependencias
 
 ### Paquetes en screenplay
-- Features
-- Runners
-- Steps definition
-- Tasks
-- Interaccion
-- Questions
-- User interface
+- Features (almacena los casos de prueba)
+- Runners (ejecuta los casos de prueba)
+- Steps definition (define los casos de prueba por medio de keywords)
+- Tasks (describe en alto nivel los pasos del usuario)
+- Interaccion (indica como el usuario interactua con el sistema)
+- Questions (permite validar los resultados esperado)
+- User interface (contiene los indentificadores de objetos)
 
 ![Estructura de screenplay](imagesReadme/screenplay_tree.png)
 

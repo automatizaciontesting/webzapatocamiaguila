@@ -8,10 +8,10 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 
 @RunWith(CucumberSerenityRunner.class)
 @CucumberOptions(
-		features="src/test/resources/features/LoginZapatocaMiAguila.feature",
+		features="src/test/resources/features/Login.feature",
 		glue = "com.zapatocamiaguila.stepsdefinition",
 		snippets = CAMELCASE,
-        tags = "@loginSinCredenciales"
+        tags = "@loginExitoso"
 		)
 public class LoginRunner {
 }

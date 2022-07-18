@@ -2,8 +2,6 @@ package com.zapatocamiaguila.stepsdefinition;
 
 import com.zapatocamiaguila.questions.CuentaCreada;
 import com.zapatocamiaguila.tasks.IngresarCredenciale;
-import com.zapatocamiaguila.tasks.IngresarEnLogueo;
-import com.zapatocamiaguila.ui.HomeZapatoca;
 import com.zapatocamiaguila.ui.RegistroZapatoca;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
