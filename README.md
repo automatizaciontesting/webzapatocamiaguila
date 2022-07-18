@@ -115,6 +115,12 @@ Como ejecutar el proyecto
 | \src\test\java\com\automatizacion\runners | ejecutar el runner de la funcionalidad, dando clic derecho sobre la clase                                                                                                                       |
 | Consola cmd en la raíz del proyecto           | ejecutar comando: gradle clean test -Dtags=nombreTag , el nombre del tag se encuentra en el feature anterior a la definición del escenario.                                                     |
 
+## Ejecución desde Jenkins
+
+
+![FreeStyleJob_Jenkins](imagesReadme/jenkins1.png)
+![FreeStyleJob_Jenkins](imagesReadme/jenkins2.png)
+![FreeStyleJob_Jenkins](imagesReadme/jenkins3.png)
 
 # Licencias
 
